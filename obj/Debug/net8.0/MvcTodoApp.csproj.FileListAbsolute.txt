@@ -28,3 +28,4 @@ C:\Users\it\Desktop\c#\MvcTodoApp\obj\Debug\net8.0\refint\MvcTodoApp.dll
 C:\Users\it\Desktop\c#\MvcTodoApp\obj\Debug\net8.0\MvcTodoApp.pdb
 C:\Users\it\Desktop\c#\MvcTodoApp\obj\Debug\net8.0\MvcTodoApp.genruntimeconfig.cache
 C:\Users\it\Desktop\c#\MvcTodoApp\obj\Debug\net8.0\ref\MvcTodoApp.dll
+C:\Users\it\Desktop\c#\MvcTodoApp\obj\Debug\net8.0\MvcTodoApp.sourcelink.json
