@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+@model List<MvcTodoApp.Models.TaskItem>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>MVC - تطبيق المهام اليومية</title>
+</head>
+
+<body>
+    <h1>قائمة المهام اليومية<h1>
+    <ul>
+        @foreach (var task in Model)
+        {
+              <li>
+                @if(task.IsComplete)
+                  {
+                    <s>@task.Title</s>
+                }
+                else
+                    {
+                @task.Title
+                <form method="post" asp-action="CompleteTask" style="display:inline;">
+                <input type="hidden" name="id" value="@task.Id" />
+                <button type="submit">اكتملت></button>
+                </form>
+                <!--Todo اضافة زر تعديل المهمة>
+                }
+              </li>
+        }
+    </ul>
+
+    <form method="post" asp-action="AddTask">
+        <input type="text" name="title" placeholder="جديدة مهمة أضف "/>
+        <button type="submit">إضافة</button>
+    </form>
+</body>
+</html>
